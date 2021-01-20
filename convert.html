@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+     
+    width: 150px;
+    height: 30px;
+    padding-left: 25px;
+        }
+        button{
+    width: 100px;
+    height: 35px;
+    margin: 5px;
+    background: dodgerblue;
+    color: white;
+    border: 1px solid lightgrey;
+}
+    </style>
+</head>
+<body>
+    <label for=""><b>Enter a number to covert it into bianary</b></label>
+    <br>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number " id="myInput">
+    <button type="button" onclick="Convert();">Convert</button>
+    <br><br>
+    <p id="ans"></p>
+    <script>
+        
+        function Convert(){
+            var ans = document.getElementById("ans")
+            var inputVal = document.getElementById("myInput").value;
+            inputVal = Number(inputVal)
+            var res = inputVal.toString(2);
+            ans.innerHTML = "Bianary :" + res
+            
+        }
+        
+  
+    </script>
+</body>
+</html>
